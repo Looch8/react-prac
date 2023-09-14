@@ -1,11 +1,14 @@
+import ListGroupItem from "react-bootstrap";
 import "./FruitList.css";
+
+import ListGroup from "react-bootstrap/ListGroup";
 
 export default function FruitList(props) {
 	if (props.listToShow.includes("pineapple") && new Date().getDay() === 3) {
 		return null;
 	}
 	let listOfFruit = props.listToShow.map((fruit) => {
-		return <li key={fruit}>{fruit}</li>;
+		return <ListGroup.Item key={fruit}>{fruit}</ListGroup.Item>;
 	});
 
 	return (
