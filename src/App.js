@@ -1,4 +1,3 @@
-import "./App.css";
 import FruitList from "./FruitList";
 
 // Some comment here
@@ -9,7 +8,7 @@ function App() {
 	return (
 		<div className="App">
 			<h1>Hello World!</h1>
-			<ul>
+			<listGroup>
 				<h1>Fruit list 1</h1>
 				<FruitList
 					listToShow={["banana", "pineapple", "mango", "kiwi"]}
@@ -21,8 +20,11 @@ function App() {
 				<h1>Blue Fruits</h1>
 				<FruitList listToShow={["blueberry", "grape"]} />
 
-				<h3>Blue fruits are rare, because blue is rare in nature</h3>
-			</ul>
+				<h3 className="listMessage">
+					Blue fruits are rare, because blue is rare in nature
+				</h3>
+				<h4>Blue fruits are cool!</h4>
+			</listGroup>
 		</div>
 	);
 }
