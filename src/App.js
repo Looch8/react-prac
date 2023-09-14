@@ -11,10 +11,17 @@ function App() {
 			<h1>Hello World!</h1>
 			<ul>
 				<h1>Fruit list 1</h1>
-				<FruitList listToShow={["banana", "mango", "kiwi"]} />
+				<FruitList
+					listToShow={["banana", "pineapple", "mango", "kiwi"]}
+				/>
 
 				<h1>Fruit list 2</h1>
 				<FruitList listToShow={["apple", "orange", "lime"]} />
+
+				<h1>Blue Fruits</h1>
+				<FruitList listToShow={["blueberry", "grape"]} />
+
+				<h3>Blue fruits are rare, because blue is rare in nature</h3>
 			</ul>
 		</div>
 	);
